@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        @font-face { 
+            font-family: "Burbank Big Condensed Bold"; 
+            src: url('/font.ttf'); 
+        }
+        .container {
+            background-size: cover;
+            position: relative;
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+        .text {
+            position: absolute;
+            font-size: 27px;
+            font-weight: bold;
+            font-family: "Burbank Big Condensed Bold", sans-serif;
+            transform: scaleY(0.5);
+        }
+        .image-container {
+            position: relative;
+            left: 50px
+        }
+        .precent {
+            position: relative;
+            left: 50px
+        }
+        .image-rank {
+            position: absolute;
+            top: 6px;
+            left: 18px;
+            z-index: 3;
+            width: 48px;  
+            height: 48px;
+        }
+        .image-percent {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 352px; /* Set the desired width for cropping */
+            height: 43px;
+            clip-path: polygon(0 0, 342px 0, 342px 100%, 0 100%); /* Crop the width */
+        }
+
+        .image-transparent {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+
+        .image-current {
+            position: absolute;
+            top: 0;
+            left: -0px;
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div class="rank">
+        <img class="image-rank" src="assets/icons/Champion.png">
+    </div>
+
+    <div class="image-container">
+        <img class="image-current" src="src/current.png">
+        <img class="image-percent" src="src/percentage.png">
+        <img class="image-transparent" src="src/transparent.png">
+    </div>
+    <div class="percent">
+        <div class="container"><div class="text">40%</div>
+    </div>
+</div>
+</body>
+</html>
