@@ -1,5 +1,5 @@
-# Fortnite Twitch Overlay - Live Rank Tracker
-Fortnite Twitch Overlay is a dynamic and user-friendly application designed for Twitch streamers. It tracks and displays your live Fortnite rank on a local webserver, providing an engaging experience for your viewers.
+# Fortnite Stream Overlay - Live Rank Tracker
+Fortnite Stream Overlay is a dynamic and user-friendly application designed for streamers. It tracks and displays your live Fortnite rank on a local webserver, providing an engaging experience for your viewers.
 ## Features
 - **Real-Time Rank Tracking**: Automatically updates your Fortnite rank in real time.
 - **Customizable Overlay**: Tailor the overlay design to fit the look and feel of your stream.
