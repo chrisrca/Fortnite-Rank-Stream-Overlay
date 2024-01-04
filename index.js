@@ -20,7 +20,7 @@ const rl = readline.createInterface({
 });
 
 let account_id = '';
-const ranking_type = 'ranked-br';
+let ranking_type = 'ranked-br';
 const port = 3000;
 
 async function update() {
@@ -117,8 +117,16 @@ const server = http.createServer(async (req, res) => { // async callback
   }
 });
 
-rl.question('Please enter your display name: ', function (userName) {
+rl.question('Please enter your <display name> and [-br/-zb]: ', function (userName) {
   if (userName) {
+      if (userName.toLowerCase().endsWith(" -br")) {
+        ranking_type = 'ranked-br';
+        userName = userName.slice(0, -4);
+      } else if (userName.toLowerCase().endsWith(" -zb")) {
+        ranking_type = 'ranked-zb'
+        userName = userName.slice(0, -4);
+      }
+
       const formattedName = userName.replace(/\s/g, '%20');
       const url = `http://160.251.9.161:8080/api/fortnite/rank/fetch_user_by_display_name?display_name=${formattedName}`;
       axios.get(url)
@@ -137,3 +145,4 @@ rl.question('Please enter your display name: ', function (userName) {
   }
   rl.close();
 });
+
