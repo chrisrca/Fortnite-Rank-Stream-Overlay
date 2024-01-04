@@ -30,4 +30,4 @@ Fortnite Stream Overlay is a dynamic and user-friendly application designed for 
   - Axios v1.6.3
   - pkg v5.8.1
  
-- To build run ```pkg . --no-bytecode```
+- To build run ```pkg . --no-bytecode --target node18-win-x64```
