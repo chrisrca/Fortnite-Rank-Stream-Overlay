@@ -21,3 +21,13 @@ Fortnite Stream Overlay is a dynamic and user-friendly application designed for 
 ![image](https://github.com/chrisrca/Rank-Display/assets/104008364/0c3e4edc-f5b0-43b5-a46c-8b0f9973560a)
 
 ![image](https://github.com/chrisrca/Rank-Display/assets/104008364/0bb9666f-49af-4e51-965a-979a5abdda8b)
+
+## Building
+- This project was built with:
+  
+  - Node JS v18.12.1
+  - npm v9.1.2
+  - Axios v1.6.3
+  - pkg v5.8.1
+ 
+- To build run ```pkg . --no-bytecode```
