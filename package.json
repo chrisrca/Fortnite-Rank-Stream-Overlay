@@ -1,13 +1,13 @@
 {
   "name": "rank-display",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "rank display for fortnite streams",
   "main": "index.js",
   "bin": "index.js",
   "scripts": {
     "start": "node index.js"
   },
-  "author": "",
+  "author": "chrisrca",
   "license": "ISC",
   "dependencies": {
     "axios": "^1.6.3"
