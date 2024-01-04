@@ -19,11 +19,9 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-// Replace these with actual values or ways to get these values in Node.js
 let account_id = '';
 const ranking_type = 'ranked-br';
 const port = 3000;
-let percentage = 100;
 
 async function update() {
     try {
@@ -62,7 +60,7 @@ async function update() {
     }
 }
 
-const server = http.createServer(async (req, res) => { // Make this callback async
+const server = http.createServer(async (req, res) => { // async callback 
   let percentage = 100
   let icon = ""
   if (req.url === '/') {
@@ -71,10 +69,6 @@ const server = http.createServer(async (req, res) => { // Make this callback asy
       res.statusCode = 200;
 
       const rank = await update(); 
-      // console.log(rank.rankIcon);
-      // console.log(rank.progress);
-      // console.log(rank.rankBar);
-
       percentage = rank.progress
       icon = rank.rankIcon
 
